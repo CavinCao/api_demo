@@ -74,9 +74,6 @@ public class WebConfiguration extends WebMvcConfigurerAdapter {
     @Override
     public void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> exceptionResolvers) {
         exceptionResolvers.add((request, response, handler, e) -> {
-            if(request.getRequestURI().equals("/swagger-ui.html")) {
-                return new ModelAndView();
-            }
             Result result = new Result();
             if (e instanceof ServiceException) {//业务失败的异常，如“账号或密码错误”
                 result.setCode(ResultCode.FAIL).setMessage(e.getMessage());
