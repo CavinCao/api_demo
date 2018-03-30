@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cavin.springboot.api_demo.dao.EmployeeMapper">
+  <resultMap id="BaseResultMap" type="com.cavin.springboot.api_demo.model.Employee">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="department_id" jdbcType="BIGINT" property="departmentId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="sex" jdbcType="INTEGER" property="sex" />
+    <result column="work_year" jdbcType="INTEGER" property="workYear" />
+    <result column="head_url" jdbcType="VARCHAR" property="headUrl" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="creator_time" jdbcType="TIMESTAMP" property="creatorTime" />
+    <result column="creator_Name" jdbcType="VARCHAR" property="creatorName" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="update_name" jdbcType="VARCHAR" property="updateName" />
+  </resultMap>
+</mapper>
